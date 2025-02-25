@@ -23,5 +23,6 @@ import VModelDirective from './v-model-directive/VModelDirective.vue'
   min-height: 1280px;
   min-width: 720px;
   background-color: whitesmoke;
+  margin-bottom: 3rem;
 }
 </style>
