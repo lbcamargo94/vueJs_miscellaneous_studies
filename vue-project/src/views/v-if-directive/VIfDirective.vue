@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const user_name = "John Doe";
 const login_text = "Login";
 const logout_text = "Logout";
-let is_user_logged_in = false;
+const is_user_logged_in = ref(false);
 
 const change_login = () => {
-  is_user_logged_in = !is_user_logged_in;
+  is_user_logged_in.value = !is_user_logged_in.value;
   console.log(is_user_logged_in);
 }
 

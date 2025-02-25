@@ -3,7 +3,7 @@ import HelloWorld from '../components/HelloWorld.vue'
 import WorkingWithComponents from './working-with-components/WorkingWithComponents.vue'
 import VIfDirective from './v-if-directive/VIfDirective.vue'
 import VForDirective from './v-for-directive/VForDirective.vue'
-
+import VModelDirective from './v-model-directive/VModelDirective.vue'
 </script>
 
 <template>
@@ -12,6 +12,7 @@ import VForDirective from './v-for-directive/VForDirective.vue'
     <WorkingWithComponents />
     <VIfDirective />
     <VForDirective />
+    <VModelDirective />
   </main>
 </template>
 
