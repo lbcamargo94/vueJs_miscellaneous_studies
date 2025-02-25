@@ -5,13 +5,22 @@ defineProps<{
 </script>
 
 <template>
-  <H1>
-    Hello World!!
-  </H1>
+  <div class="hello-container">
+    <H1>
+      Hello World!!
+    </H1>
+    <h3>
+      {{ msg }}
+    </h3>
+  </div>
 </template>
 
-<style scoped>
+<style>
 h1 {
-  color: whitesmoke;
+  font-weight: 600;
+}
+
+.hello-container {
+  background-color: whitesmoke;
 }
 </style>

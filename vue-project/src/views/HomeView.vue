@@ -1,20 +1,21 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
 import HelloWorld from '../components/HelloWorld.vue'
+import WorkingWithComponents from './working-with-components/WorkingWithComponents.vue'
 
 </script>
 
 <template>
-  <main class="main">
-    <HelloWorld />
+  <main class="home-view">
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <WorkingWithComponents />
   </main>
 </template>
 
 <style>
-.main {
-  display: flex;
-  flex-direction: column;
+.home-view {
   height: 100%;
   width: 100%;
+  min-height: 1280px;
+  min-width: 720px;
 }
 </style>
