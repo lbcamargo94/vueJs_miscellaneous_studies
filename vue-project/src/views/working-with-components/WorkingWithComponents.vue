@@ -13,10 +13,10 @@ import MyComponent from '../../components/my-component/MyComponentCard01.vue'
 .working-with-components-container {
   height: 100%;
   width: 100%;
-  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  padding: 1rem;
 }
 </style>

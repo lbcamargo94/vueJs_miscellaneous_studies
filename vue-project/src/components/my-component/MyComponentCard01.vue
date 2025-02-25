@@ -25,9 +25,9 @@
 
 <style>
 .card {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #00000033;
   height: auto;
   margin: 1rem;
   max-height: 600px;
