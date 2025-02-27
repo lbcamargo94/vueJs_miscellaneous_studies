@@ -5,6 +5,7 @@ import VIfDirective from './v-if-directive/VIfDirective.vue'
 import VForDirective from './v-for-directive/VForDirective.vue'
 import VModelDirective from './v-model-directive/VModelDirective.vue'
 import SubmissionEvent from './submission-event/SubmissionEvent.vue'
+import PreventDefault from './prevent-default/PeventDefault.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import SubmissionEvent from './submission-event/SubmissionEvent.vue'
     <VForDirective />
     <VModelDirective />
     <SubmissionEvent />
+    <PreventDefault />
   </main>
 </template>
 

@@ -8,7 +8,7 @@ const email = ref('');
 const age = ref(0);
 const is_valid_forms_fields = ref(true);
 
-const SubmissionEventForms = (): void => {
+const submissionEventForms = (): void => {
   send_submission_forms.value = true;
   alert(`
   Name: ${name.value}
@@ -22,7 +22,7 @@ const SubmissionEventForms = (): void => {
   is_valid_forms_fields.value = true;
 };
 
-const ValidateFormsFields = (): void => {
+const validateFormsFields = (): void => {
   const valid_name = name.value.length > 0;
   const valid_email = email.value.length > 0;
   const valid_age = age.value >= 0;
@@ -40,28 +40,28 @@ const ValidateFormsFields = (): void => {
 <template>
   <div class="submission-event-container">
     <h1 class="submission-event-title">Submission Event</h1>
-    <form class="submission-event-form" @submit.prevent="SubmissionEventForms">
+    <form class="submission-event-form" @submit.prevent="submissionEventForms">
       <label for="input-name" class="submission-event-label">
         Nome:
         <input id="input-name" type="text" class="submission-event-input" placeholder="Digite seu nome."
-          @change="(e: Event) => { name = (e.target as HTMLInputElement).value; ValidateFormsFields(); }" value=""
+          @change="(e: Event) => { name = (e.target as HTMLInputElement).value; validateFormsFields(); }" :value="name"
           defaultValue="" />
       </label>
 
       <label for="input-email" class="submission-event-label">
         E-mail:
         <input id="input-email" type="email" class="submission-event-input" placeholder="Digite seu email."
-          @change="(e: Event) => { email = (e.target as HTMLInputElement).value, ValidateFormsFields(); }" value=""
-          defaultValue="" />
+          @change="(e: Event) => { email = (e.target as HTMLInputElement).value, validateFormsFields(); }"
+          :value="email" defaultValue="" />
       </label>
 
       <label for="input-age" class="submission-event-label">
         Idade:
         <input id="input-age" type="number" class="submission-event-input"
-          @input="(e: Event) => age = parseInt((e.target as HTMLInputElement).value)" value="0" defaultValue="0" />
+          @input="(e: Event) => age = parseInt((e.target as HTMLInputElement).value)" :value="age" defaultValue="0" />
       </label>
 
-      <button type="submit" class="submission-event-button" :disabled="is_valid_forms_fields">Submit</button>
+      <button type="submit" class="submission-event-button" :disabled="is_valid_forms_fields">Enviar</button>
     </form>
   </div>
 </template>
@@ -71,7 +71,7 @@ const ValidateFormsFields = (): void => {
 .submission-event-container {
   height: 100%;
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
   padding: 1rem;
   background-color: #ffffff;
   border-radius: 10px;
