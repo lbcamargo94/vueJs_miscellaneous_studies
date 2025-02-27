@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import HelloWorld from '../components/HelloWorld.vue'
-import WorkingWithComponents from './working-with-components/WorkingWithComponents.vue'
-
+import EmitEvent from './emit-event/EmitEvent.vue';
 </script>
 
 <template>
   <main class="home-view">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <EmitEvent />
   </main>
 </template>
 
@@ -19,7 +19,5 @@ import WorkingWithComponents from './working-with-components/WorkingWithComponen
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 </style>
