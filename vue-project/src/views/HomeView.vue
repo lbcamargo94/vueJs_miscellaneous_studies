@@ -4,6 +4,7 @@ import WorkingWithComponents from './working-with-components/WorkingWithComponen
 import VIfDirective from './v-if-directive/VIfDirective.vue'
 import VForDirective from './v-for-directive/VForDirective.vue'
 import VModelDirective from './v-model-directive/VModelDirective.vue'
+import SubmissionEvent from './submission-event/SubmissionEvent.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import VModelDirective from './v-model-directive/VModelDirective.vue'
     <VIfDirective />
     <VForDirective />
     <VModelDirective />
+    <SubmissionEvent />
   </main>
 </template>
 
@@ -24,5 +26,9 @@ import VModelDirective from './v-model-directive/VModelDirective.vue'
   min-width: 720px;
   background-color: whitesmoke;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>

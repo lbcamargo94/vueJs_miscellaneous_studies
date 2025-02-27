@@ -8,7 +8,7 @@ const list_of_pets = [
   { name: "Juquinha", sex: "male", age: getRandomInt(10), image_url: "https://picsum.photos/id/659/300/200" },
 ]
 
-function getRandomInt(max) {
+function getRandomInt(max: number) {
   return Math.floor(Math.random() * max);
 }
 </script>

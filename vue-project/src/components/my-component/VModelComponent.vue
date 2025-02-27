@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const message: string = ref('')
+const message = ref('')
 const send_message = ref(false);
 const send_success = ref(false);
 const send_error = ref(false);
@@ -28,7 +28,7 @@ const send_message_function = () => {
     <p class="v-model-component-text">Message:</p>
     <div class="v-model-component-box-text">{{ message }}</div>
     <button class="v-model-component-button" @click="send_message_function">Enviar Menssagem</button>
-    <p :class="send_message && send_success ? 'success_message' : 'error_messsage' ? 'error_messsage' : ''">
+    <p :class="send_message && send_success ? 'success_message' : 'error_messsage'">
       {{ send_message && send_success ? success_message : '' }}
       {{ send_message && send_error ? error_messsage : '' }}
     </p>
