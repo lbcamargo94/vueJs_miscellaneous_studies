@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import NavBarComponent from '../navbar/NavBarComponent.vue';
+import NavBarComponent from '@/components/navbar/NavBarComponent.vue';
 </script>
 
 <template>
@@ -15,7 +15,7 @@
 header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   line-height: 1.5;
   align-items: center;
   box-sizing: border-box;

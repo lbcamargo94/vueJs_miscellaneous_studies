@@ -7,19 +7,19 @@ import WorkingWithComponents from './working-with-components/WorkingWithComponen
 <template>
   <main class="home-view">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-    <WorkingWithComponents />
   </main>
 </template>
 
 <style>
 .home-view {
   height: 100%;
+  min-height: 900px;
   width: 100%;
   background-color: whitesmoke;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 </style>

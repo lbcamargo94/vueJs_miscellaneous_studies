@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import WorkingWithComponents from '../views/working-with-components/WorkingWithComponents.vue'
 import VIfDirective from '../views/v-if-directive/VIfDirective.vue'
 import VForDirective from '../views/v-for-directive/VForDirective.vue'
 import VModelDirective from '../views/v-model-directive/VModelDirective.vue'
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+    },
+    {
+      path: '/working_with_components',
+      name: 'working_with_components',
+      component: WorkingWithComponents,
     },
     {
       path: '/v_if_directive',
