@@ -1,43 +1,28 @@
 <script setup lang="ts">
-import {
-  // RouterLink,
-  RouterView
-} from 'vue-router'
+import { RouterView } from 'vue-router'
+import HeaderComponent from './components/header/HeaderComponent.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50px" height="50px" />
-    <span class="title">MY VUE.JS</span>
-  </header>
-
-  <RouterView />
+  <div class="app-container">
+    <HeaderComponent />
+    <h1 class="app-title"> My Vue Tester App</h1>
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  line-height: 1.5;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.logo {
-  box-sizing: border-box;
+.app-container {
   display: block;
-}
-
-.title {
-  color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  font-weight: 400;
-  text-align: center;
   width: 100%;
   height: 100%;
-  padding-right: 50px;
+  min-height: 100vh;
+}
+
+.app-title {
+  font-size: 2rem;
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 1rem;
 }
 </style>

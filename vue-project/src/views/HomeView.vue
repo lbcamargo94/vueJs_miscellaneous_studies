@@ -15,8 +15,6 @@ import WorkingWithComponents from './working-with-components/WorkingWithComponen
 .home-view {
   height: 100%;
   width: 100%;
-  min-height: 1280px;
-  min-width: 720px;
   background-color: whitesmoke;
   margin-bottom: 3rem;
   display: flex;
